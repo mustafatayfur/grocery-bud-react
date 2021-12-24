@@ -41,7 +41,7 @@ function App() {
       setList([])
     }
 
-    
+   
 
   return (
     <section className='section-center'>
