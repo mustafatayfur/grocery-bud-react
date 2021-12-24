@@ -41,7 +41,10 @@ function App() {
       setList([])
     }
 
-   
+    const removeItem = (id)=>{
+      showAlert(true, 'danger', 'Item removed');
+      setList(list.filter((item)=> item.id !== id))
+    }
 
   return (
     <section className='section-center'>
