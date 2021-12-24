@@ -3,7 +3,14 @@ import List from './List'
 import Alert from './Alert'
 
 
-
+const getLocalStorage = ()=> {
+  let list = localStorage.getItem('list')
+  if (list){
+    return JSON.parse(localStorage.getItem('list'))
+  }else{
+    return []
+  }
+}
 
 function App() {
     const [name, setName] = useState('');
